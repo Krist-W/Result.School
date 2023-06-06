@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --color-darksgray: rgb(52, 66, 66);
+    --color-lightviolet: rgb(228, 209, 251, 0.596);
+    --color-darkviolet: rgb(160, 84, 187);
+    --color-violet: rgb(215, 133, 253);
+  }
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background: rgb(248, 241, 231);
+  color: var(--color-darksgray)
+}
+
+.card {
+  background: var(--color-lightviolet);
+  margin: 30px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  margin: 50px 30px 30px 30px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.title {
+  padding: 0 0 10px 12px;
+}
+
+.contact {
+  text-align: center;
+  font-size: 22px;
+}
+
+ul {
+  margin-left: 24px;
+  padding: 0;
+}
+
+p {
+  word-spacing: 2px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+.edu p {
+  margin-left: 6px;
+  padding-bottom: 6px;
+}
+
+li {
+  padding-bottom: 6px;
+}
+
+li::marker {
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--color-darkviolet)
+}
+
+.head {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  
+  .head {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-violet);
+  font-weight: 500;
+}
+.btn {
+  margin: 20px 0 20px 0;
+  background: rgb(248, 241, 231);
+  padding: 8px 22px;
+  border-radius: 18px;
+  border: none;
+  border: 1px solid var(--color-darkviolet);
+  color: var(--color-darkviolet);
+  font-family: inherit;
+  font-weight: 600;
+}
+.btn:hover {
+  color: rgb(248, 241, 231);
+  background: var(--color-violet);
+  border: 1px solid var(--color-violet);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse; 
+}
+
+@media (max-width: 420px) {
+
+    .table td {
+      display: flex;
+      flex-wrap: wrap;
+  
+    }
+  }
+
+  @media (max-width: 420px) {
+    tr {
+        border-bottom: 1px solid grey;
+
+    }
+    }
+  
+
+.table td {
+  padding-bottom: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+
+.form label {
+  display: block;
+  font-size: 14px;
+}
+.form-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form,
+form-row {
+  display: inline-block;
+  margin-right: 20px;
+  width: 50%;
+}
+.form,
+form-row:last-child {
+  margin-right: 0;
+}
+
+.form input,
+.form textarea {
+  box-shadow: inset 20px 20px 0px 20px rgb(248, 241, 231);
+  width: 100%;
+  border: none;
+  background: transparent;
+  box-sizing: border-box;
+  border-bottom: 1px solid grey;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+}
