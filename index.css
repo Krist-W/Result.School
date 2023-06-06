@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --color-darksgray: rgb(52, 66, 66);
-    --color-lightviolet: rgb(228, 209, 251, 0.596);
-    --color-darkviolet: rgb(160, 84, 187);
-    --color-violet: rgb(215, 133, 253);
-  }
-
+  --color-darksgray: rgb(52, 66, 66);
+  --color-lightviolet: rgb(228, 209, 251, 0.596);
+  --color-darkviolet: rgb(160, 84, 187);
+  --color-violet: rgb(215, 133, 253);
+}
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   background: rgb(248, 241, 231);
-  color: var(--color-darksgray)
+  color: var(--color-darksgray);
 }
 
 .card {
@@ -67,7 +66,7 @@ li {
 li::marker {
   font-weight: bold;
   font-size: 22px;
-  color: var(--color-darkviolet)
+  color: var(--color-darkviolet);
 }
 
 .head {
@@ -75,7 +74,6 @@ li::marker {
 }
 
 @media (max-width: 500px) {
-  
   .head {
     flex-wrap: wrap;
     align-items: center;
@@ -114,25 +112,21 @@ li::marker {
 .table {
   width: 100%;
   margin: 0 auto;
-  border-collapse: collapse; 
+  border-collapse: collapse;
 }
 
 @media (max-width: 420px) {
-
-    .table td {
-      display: flex;
-      flex-wrap: wrap;
-  
-    }
+  .table td {
+    display: flex;
+    flex-wrap: wrap;
   }
+}
 
-  @media (max-width: 420px) {
-    tr {
-        border-bottom: 1px solid grey;
-
-    }
-    }
-  
+@media (max-width: 420px) {
+  tr {
+    border-bottom: 1px solid grey;
+  }
+}
 
 .table td {
   padding-bottom: 6px;
